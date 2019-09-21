@@ -1,0 +1,55 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+    <h1>{{message}}</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+                    <legend class="text-center">Valid information is required to register. <span class="req"><small>
+                                required *</small></span></legend>
+
+                    <div class="form-group">
+                        <label for="Name"><span class="req">* </span> Name: <small>This will be your login user
+                                name</small> </label>
+                        <input required type="text" [(ngModel)]="user.name" name="name" id="name"
+                            class="form-control phone" maxlength="28" placeholder="Enter your fullname..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstname"><span class="req">* </span> Email: </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.email" name="email" id="txt" required
+                            placeholder="Enter valid email address" />
+                        <div id="errFirst"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname"><span class="req">* </span> Experience : </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.experience" name="experience" id="txt"
+                            placeholder="Total year of experience" required />
+                        <div id="errLast"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><span class="req">* </span> Developer: </label>
+                        <input class="form-control" required type="text" [(ngModel)]="user.domain" name="domain"
+                            id="email" placeholder="fullstack/backend/developer" />
+                        <div class="status" id="status"></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerNow()">
+                    </div>
+                </fieldset>
+            </form><!-- ends register form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+
+    </div>
+</div>
+
+

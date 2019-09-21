@@ -1,0 +1,64 @@
+
+
+
+.custab{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 10% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+    }
+.custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+    }
+
+   
+
+#custom-search-input {
+  margin:0;
+  margin-top: 24px;
+  padding: 2px;
+}
+.col-md-12 {
+  width: 62%;
+}
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 43px;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color:green;
+}
+
+.search-query:focus + button {
+  z-index: 3;  
+}
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  padding-right: 0px;
+  padding-left: 183px;
+}
