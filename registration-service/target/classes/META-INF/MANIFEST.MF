@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: registration-service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: basan
+Implementation-Vendor-Id: com.javatechie
+Build-Jdk: 1.8.0_181
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/registration-service
+Created-By: Maven Integration for Eclipse
+
